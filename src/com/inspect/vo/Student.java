@@ -35,7 +35,7 @@ public class Student {
      * <li>3表示普通学生
      */
     private Integer level;
-    
+
     /**
      * 学生状态
      * <li>1表示初始
@@ -93,10 +93,18 @@ public class Student {
         this.level = level;
     }
 
+    public Integer getState() {
+        return state;
+    }
+
+    public void setState(Integer state) {
+        this.state = state;
+    }
+
     @Override
     public String toString() {
         return "Student [id=" + id + ", number=" + number + ", email=" + email + ", password=" + password
-                + ", ClassesId=" + ClassesId + ", level=" + level + "]";
+                + ", ClassesId=" + ClassesId + ", level=" + level + ", state=" + state + "]";
     }
 
 }

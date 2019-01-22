@@ -27,6 +27,11 @@ public class Nocome {
      */
     private Integer examiner;
 
+    /**
+     * È±µ½ÈÕÆÚ
+     */
+    private String createDate;
+
     public Integer getId() {
         return id;
     }
@@ -59,10 +64,18 @@ public class Nocome {
         this.examiner = examiner;
     }
 
+    public String getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(String createDate) {
+        this.createDate = createDate;
+    }
+
     @Override
     public String toString() {
         return "Nocome [id=" + id + ", inspectId=" + inspectId + ", studentId=" + studentId + ", examiner=" + examiner
-                + "]";
+                + ", createDate=" + createDate + "]";
     }
 
 }

@@ -35,6 +35,21 @@ public class Leave {
      */
     private Integer inspectId;
 
+    /**
+     * 请假发起时间
+     */
+    private String createDate;
+
+    /**
+     * 请假通过时间
+     */
+    private String passDate;
+
+    /**
+     * 请假时间
+     */
+    private String leaveDate;
+
     public Integer getId() {
         return Id;
     }
@@ -75,10 +90,34 @@ public class Leave {
         this.inspectId = inspectId;
     }
 
-    @Override
+    public String getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(String createDate) {
+        this.createDate = createDate;
+    }
+
+    public String getPassDate() {
+        return passDate;
+    }
+
+    public void setPassDate(String passDate) {
+        this.passDate = passDate;
+    }
+
+    public String getLeaveDate() {
+        return leaveDate;
+    }
+
+    public void setLeaveDate(String leaveDate) {
+        this.leaveDate = leaveDate;
+    }
+
     public String toString() {
         return "Leave [Id=" + Id + ", studentId=" + studentId + ", state=" + state + ", audiorId=" + audiorId
-                + ", inspectId=" + inspectId + "]";
+                + ", inspectId=" + inspectId + ", createDate=" + createDate + ", passDate=" + passDate + ", leaveDate="
+                + leaveDate + "]";
     }
 
 }
