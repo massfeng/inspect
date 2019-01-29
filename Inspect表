@@ -1,0 +1,12 @@
+import java.util.List;
+
+public interface Inspect {
+	void addInspect(Inspect inspect);
+	void changeState(String InspectName);//ȡ�����
+	void changeState();//��state=2 ��Ϊ0
+	void deleteInspect();//��state=1��ɾ��
+	List<Inspect>findAll();//��ѯ���м�¼
+	void delete(int id);//����Աɾ�����
+	Inspect findLast();//�ҵ����һ��state<2�ļ�¼
+
+}
