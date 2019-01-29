@@ -1,0 +1,8 @@
+import java.util.List;
+
+public interface Notice {
+	void addNotice(Notice notice);
+	List<Notice>findAllNotice();//��ѯ����
+	void deleteNotice(int id);
+
+}
